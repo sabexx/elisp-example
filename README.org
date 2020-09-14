@@ -1,0 +1,17 @@
+* Podcastindex.org elisp example
+
+This is an example of how to connect to the podcastindex API in elisp.
+
+Before running the code, ensure you have the *request* library installed from MELPA.
+
+After entering the API key and secret and saving the file, open up an IELM repl and load the file:
+
+#+BEGIN_SRC emacs-lisp
+  (load "~/src/elisp-example/elisp-example.org")
+#+END_SRC
+
+Once the elisp file is loaded, the Index can be searched with the following function call in IELM:
+
+#+BEGIN_SRC emacs-lisp
+  (api-search "No Agenda")
+#+END_SRC
